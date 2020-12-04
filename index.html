@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+   .con{
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  margin-top: 2%;
+  text-align: center;
+}
+.confl
+{
+  text-align: center;
+  background-color: #E3CF24 ;
+}
+.con1{
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: rgba(255,255,255,0.51);
+  border-radius: 20px;
+  margin-top: 2%;
+  text-align: center;
+  padding: 2%;
+}
+#text-area
+{
+  display: none;
+}
+.dis{
+  margin-top: 5%;
+  background-color: white;
+  
+    border:5px solid gray; 
+  height: 100%;
+
+}
+
+
+  </style>
+<title>Typing master</title>
+</head>
+<body class="confl">
+	<div class="con">
+		<h1 >Test Your Typing-Speed</h1>
+		
+	</div>
+	<div class="con1" id="approval">
+		<h1>Do you want to Start ?? <br> </h1>
+		<hr >
+	<button onclick="Agree()"> Yes!</button>
+  <button>  No!</button>
+    
+  </button>
+	
+	</div>
+  <div class="con1 " id="text-area">
+    <p style="padding: 5%;">This is a Typing Test . Your Goal is to duplicate  the provided Text, Exactly in the field below .The timer starts when you start typing and only stops when you match this text exactly.Good Luck!  </p>
+    <hr>
+    <div style="background-color:rgba(255,255,255,0.51); height: 15%;width:50%;margin-left: 20%;padding: 3%;" id="test-text">This is a sample text you have to write as fast as you can.</div>
+    <div>
+     <textarea class="dis" rows="10" cols="50;" placeholder="The clock starts when you start typing" id="area" onkeyup="comp()" onkeypress="starttime()" onpaste="return false" ></textarea></div>
+
+    
+  <div id="timer"></div>
+  <button onclick="window.location.reload()">Start over</button></span>  
+  </div>
+
+	<script src="typing.js"></script>
+
+
+</body>
+</html>
