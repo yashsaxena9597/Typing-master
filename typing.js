@@ -2,7 +2,7 @@ var totalSeconds = 0;
 var timerVar;
 var str1=document.getElementById("test-text").innerHTML;
 var str2="";
-var c;
+var c;var flag=0;
 function Agree()
 {	
 	document.getElementById("approval").style.display="none";
@@ -14,11 +14,17 @@ function Agree()
 function starttime()
 {		
 	var a=str2.length;
+	if(flag==0)
+	{
 	if(a==0)
 	{
+
 	countTimer();
 	timerVar = setInterval(countTimer, 1000);
+	flag=1;
+
 	}
+}
  
 
 }
