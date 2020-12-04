@@ -43,17 +43,23 @@ function countTimer() {
         	str2=document.getElementById("area").value;
 
 
-        	 c= str1.localeCompare(str2);
-        	 if(c==0)
+        	 c= str1.substring(0,str2.length);
+        	 if(str1==str2)
         	 {
-        	 	clearInterval(timerVar);
+        	 	 
         	 	document.getElementById("area").style.borderColor = "green";
         	 	document.getElementById("area").disabled="true";
+        	 	clearInterval(timerVar);
 
         	 }
+        	 else {
+        	 	if(str2==c)
+        	 	{
+        	 	document.getElementById("area").style.borderColor = "blue";
+        	 }
+        	 
         	 else{
         	 	document.getElementById("area").style.borderColor = "red";
-
         	 }
 
-        }
+        }}
